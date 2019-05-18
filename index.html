@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/bmoren/p5.collide2D@0.6/p5.collide2d.min.js"></script>
+
+  <script src="js/ray.js"></script>
+  <script src="js/mob.js"></script>
+  <script src="js/timebar.js"></script>
+  <script src="js/boundary.js"></script>
+  <script src="js/player.js"></script>
+  <script src="sketch.js"></script>
+
+  <title>Flashy</title>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    canvas {
+      display: flex;
+      vertical-align: middle;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80px;
+      border-radius: 15px;
+      border-radius: 15px;
+    }
+
+    p {
+      color: #6d6d6d;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    code {
+      color: #ffffff;
+      background-color: #b7b5b5;
+      padding: 3px;
+      border-radius: 3px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sketch-holder">
+  </div>
+  <p>Use <code>WASD</code> or <code>arrow keys</code> to move the player and the mouse to look around.</p>
+</body>
+
+</html>
