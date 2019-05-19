@@ -93,9 +93,16 @@ function gameover() {
 
 function levelUp() {
   points++;
-  target = new Treasure(random(width), random(height));
-  enemies.push(new Enemy(random(width), random(height)));
-  timebar.reset();  
+  let maxSpawnHeight = height - timebar.barHeight;
+  
+  target = new Treasure(random(width), random(maxSpawnHeight));
+
+  enemies.push(new Enemy(random(width), random(maxSpawnHeight)));
+  enemies.push(new Enemy(random(width), random(maxSpawnHeight)));
+
+  timebar.reset();
+
+  enemies.forEach(e => e.maxSpeed += 0.05);
 }
 
 function draw() {
