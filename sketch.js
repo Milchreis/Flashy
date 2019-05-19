@@ -29,16 +29,16 @@ function resetGame() {
   walls.push(new Boundary(width, height, 0, height));
   walls.push(new Boundary(0, height, 0, 0));
   
-  enemies = [];
-  for (let i = 0; i < NUMBER_OF_ENEMIES; i++) {
-    enemies.push(new Enemy(random(width), random(height)));
-  }
-  
   timebar = new Timebar(0, height, width, height, TIME_TO_LIVE);
-  
   player = new Player();
   target = new Treasure(random(width), random(height));
-
+  
+  enemies = [];
+  let maxSpawnHeight = height - timebar.barHeight;
+  for (let i = 0; i < NUMBER_OF_ENEMIES; i++) {
+    enemies.push(new Enemy(random(width), random(maxSpawnHeight)));
+  }
+  
   points = 0;
 }
 
