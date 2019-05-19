@@ -44,7 +44,7 @@ class Treasure extends Mob {
 class Enemy extends Mob {
   constructor(x, y) {
     super(x, y, 2, 2);
-    this.maxSpeed = 0.3;
+    this.maxSpeed = random(0.3, 0.5);
   }
 
   update(player, walls) {
