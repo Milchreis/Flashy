@@ -1,4 +1,4 @@
-# 🔦 Flashy 🔦
+# Flashy 🔦
 
 Flashy is a simple 2D game. You have to pick up the turquoise items to survive and avoid contact with the violet agents.
 But be careful. You are just equiped with a flashlight to enlight the maze.
