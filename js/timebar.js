@@ -22,7 +22,7 @@ class Timebar {
   }
   
   show() {
-    fill(255, 0, 0, 200);
+    fill(115, 116, 140);
     rect(this.pos.x, this.pos.y - this.barHeight, this.width * (this.currentTime / this.maxTime), this.barHeight);
   }
 

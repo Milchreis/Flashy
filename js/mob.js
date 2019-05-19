@@ -35,7 +35,7 @@ class Treasure extends Mob {
   show() {
     if (this.isVisible) {
       noStroke();
-      fill(10, 220, 0, 150);
+      fill(6, 182, 209);
       circle(this.pos.x, this.pos.y, this.size);
     }
   }
@@ -69,7 +69,7 @@ class Enemy extends Mob {
   show() {
     if (this.isVisible) {
       noStroke();
-      fill(255, 10, 0, 200);
+      fill(185, 6, 209);
       circle(this.pos.x, this.pos.y, this.size);
     }
   }

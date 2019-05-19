@@ -99,7 +99,7 @@ function levelUp() {
 }
 
 function draw() {
-  background(30);
+  background(0, 1, 45);
   updateControlls();
 
   player.update(walls);

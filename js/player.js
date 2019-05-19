@@ -44,12 +44,8 @@ class Player extends Mob {
 
   show() {
     let flickerPossiblity = 0.03;
-
-    fill(255);
-    circle(this.pos.x, this.pos.y, this.size);
-    
     noStroke(255);
-    fill(241, 244, 66, random(1) < flickerPossiblity ? 10 : 50);
+    fill(244, 206, 66, random(1) < flickerPossiblity ? 200 : 255);
     beginShape();
     vertex(this.pos.x, this.pos.y);
     
@@ -59,6 +55,9 @@ class Player extends Mob {
       }
     }
     endShape(CLOSE);
+
+    fill(255);
+    circle(this.pos.x, this.pos.y, this.size);
   }
 
   collidesIn(walls, xOffset, yOffset) {
