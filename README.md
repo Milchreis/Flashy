@@ -3,7 +3,7 @@
 Flashy is a simple 2D game. You have to pick up items to survive and avoid contact with enemies.
 But be careful. You are just equipped with a flashlight to light up the maze.
 
-![flashy-screenshot](https://github.com/Milchreis/Flashy/blob/master/screenshot.png)
+![flashy-screenshot](https://raw.githubusercontent.com/Milchreis/Flashy/master/flashy.gif)
 
 Play here: https://milchreis.github.io/Flashy/
 
